@@ -1,0 +1,24 @@
+{
+		"compilerOptions": {
+			"target": "ES2020",
+			"module": "esnext",
+			"moduleResolution": "node",
+			"esModuleInterop": true,
+			"strict": true,
+			"resolveJsonModule": true,
+			"outDir": "dist/server",
+			"skipLibCheck": true,
+			"types": [
+				"node"
+			],
+			"noEmit": true,
+			"allowImportingTsExtensions": true
+		},
+		"include": [
+			"server/src"
+		],
+		"exclude": [
+			"node_modules",
+			"vite.config.ts"
+		],
+	}
