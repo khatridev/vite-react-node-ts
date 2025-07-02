@@ -4,11 +4,16 @@ import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import importPlugin from 'eslint-plugin-import';
 import prettierPlugin from 'eslint-plugin-prettier';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default [
   js.configs.recommended,
   ...tseslint.configs.recommended,
   {
+    ignores: ['dist/**', 'node_modules/**'],
     files: ['client/**/*.{ts,tsx}'],
     languageOptions: {
       parser: tseslint.parser,

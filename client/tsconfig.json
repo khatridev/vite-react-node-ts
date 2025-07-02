@@ -5,5 +5,5 @@
     "lib": ["DOM", "ES2020"],
     "outDir": "../dist/client"
   },
-  "include": ["src"]
+  "include": ["src", "tests", "vitest.config.ts"]
 }
