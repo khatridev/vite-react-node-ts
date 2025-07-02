@@ -2,8 +2,8 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "noEmit": false,
-    "outDir": "dist/server",
-    "allowImportingTsExtensions": false,
+    "outDir": "../dist/server",
+    "allowImportingTsExtensions": false
   },
   "exclude": ["node_modules", "vite.config.ts"]
 }
